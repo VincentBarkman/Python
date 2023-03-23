@@ -52,30 +52,55 @@ Python uses control structures to control the flow of code execution. The most c
 ### If, elif, and else
 
 ```python
-if condition:
-    # code executed if condition is True
-elif another_condition:
-    # code executed if another_condition is True
+# Define a variable 'age' with a value
+age = 25
+
+# Check if age is less than 18
+if age < 18:
+    print("You are a minor.")
+# Check if age is between 18 and 64 (inclusive)
+elif 18 <= age < 65:
+    print("You are an adult.")
+# If none of the above conditions are true, execute the code under 'else'
 else:
-    # code executed if none of the conditions are True
+    print("You are a senior.")
 ```
 ### For loop
 ```python
-for variable in iterable:
-    # code executed for each item in the iterable
+# initialize a variable to store the sum
+total = 0
+
+# iterate over the first 10 positive integers and add them to the total
+for i in range(1, 11):
+    total += i
+
+# print out the final total
+print("The sum of the first 10 positive integers is:", total)
 ```
 ### While loop
 ```python
-while condition:
-    # code executed while the condition is True
+# initialize a counter variable
+i = 1
+
+# loop while the counter is less than or equal to 5
+while i <= 5:
+    print(i)
+    i += 1
 ```
 
 ## Functions
 In Python, you can define functions to encapsulate reusable pieces of code.
 ```python
-def function_name(parameters):
-    # code inside the function
+# define a function to add two numbers
+def add_numbers(x, y):
+    result = x + y
     return result
+
+# call the function with two arguments and store the result in a variable
+sum = add_numbers(3, 5)
+
+# print the result to the console
+print("The sum of 3 and 5 is:", sum)
 ```
 
 # Modules and Packages
