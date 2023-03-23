@@ -239,4 +239,3 @@ if __name__ == "__main__":
         process.join()
 
     print("All workers have finished.")
-    ```
