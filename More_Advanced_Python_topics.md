@@ -29,7 +29,7 @@ squares = [x ** 2 for x in range(10)]
 
 # List comprehension with a condition
 even_squares = [x ** 2 for x in range(10) if x % 2 == 0]
-
+```
 # Lambda Functions
 
 Lambda functions are small, anonymous functions that are defined using the lambda keyword. They can have any number of arguments but only one expression.
