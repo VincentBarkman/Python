@@ -19,7 +19,7 @@ The simplest Python program consists of a single line that prints "Hello, World!
 print("Hello, World!")
 ```
 
-**Variables and Data Types**
+##Variables and Data Types
 
 Python has several built-in data types. The most common ones are:
 
@@ -28,7 +28,7 @@ Python has several built-in data types. The most common ones are:
     `str`: String (text)
     `bool`: Boolean (True or False)
 
-You can assign values to variables using the assignment operator =.
+You can assign values to variables using the assignment operator `=`.
 
 
 ```python
@@ -37,3 +37,16 @@ float_var = 3.14
 string_var = "Python"
 boolean_var = True
 ```
+
+##Operators
+
+Python provides various operators for performing operations on variables and values. Some common operators are:
+
+    Arithmetic operators: +, -, *, /, //, %, **
+    Comparison operators: ==, !=, <, >, <=, >=
+    Logical operators: and, or, not
+
+##Control Structures
+
+Python uses control structures to control the flow of code execution. The most common control structures are:
+#If, elif, and else
