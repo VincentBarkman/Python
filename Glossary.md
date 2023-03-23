@@ -2,31 +2,31 @@
 
 ## Table of Contents
 
-1. Abstract Syntax Tree (AST)
-2. Arguments
-3. Bytecode
-4. Decorator
-5. Descriptor
-6. Generator
-7. Namespace
-8. Package
-9. Pickle
-10. Regular Expression
-11. Statement
-12. Subclass
-13. Traceback
-14. Virtual Environment
-15. Zen of Python
-16. Context Manager
-17. Coroutine
-18. Duck Typing
-19. Monkey Patching
-20. Singleton
-21. Metaclass
-22. Name Mangling
-23. Type Hinting
-24. Monkey Patch
-25. Coroutine Function
+1. [Abstract Syntax Tree (AST)](#abstract-syntax-tree-ast)
+2. [Arguments](#arguments)
+3. [Bytecode](#bytecode)
+4. [Decorator](#decorator)
+5. [Descriptor](#descriptor)
+6. [Generator](#generator)
+7. [Namespace](#namespace)
+8. [Package](#package)
+9. [Pickle](#pickle)
+10. [Regular Expression](#regular-expression)
+11. [Statement](#statement)
+12. [Subclass](#subclass)
+13. [Traceback](#traceback)
+14. [Virtual Environment](#virtual-environment)
+15. [Zen of Python](#zen-of-python)
+16. [Context Manager](#context-manager)
+17. [Coroutine](#coroutine)
+18. [Duck Typing](#duck-typing)
+19. [Monkey Patching](#monkey-patching)
+20. [Singleton](#singleton)
+21. [Metaclass](#metaclass)
+22. [Name Mangling](#name-mangling)
+23. [Type Hinting](#type-hinting)
+24. [Monkey Patch](#monkey-patch)
+25. [Coroutine Function](#coroutine-function)
 
 ## 1. Abstract Syntax Tree (AST)
 
