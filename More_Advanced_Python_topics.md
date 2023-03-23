@@ -4,12 +4,15 @@ This tutorial covers some advanced concepts in Python programming language. Pyth
 
 ## Table of Contents
 
-7. [List Comprehension](#list-comprehension)
-8. [Lambda Functions](#lambda-functions)
-9. [Error Handling](#error-handling)
-10. [Classes and Objects](#classes-and-objects)
-11. [Inheritance](#inheritance)
-12. [File Handling](#file-handling)
+1. [List Comprehension](#list-comprehension)
+2. [Lambda Functions](#lambda-functions)
+3. [Error Handling](#error-handling)
+4. [Classes and Objects](#classes-and-objects)
+5. [Inheritance](#inheritance)
+6. [File Handling](#file-handling)
+7. [Decorators](#decorators)
+8. [Context Managers](#context-managers)
+9. [Multiprocessing](#multiprocessing)
 
 ## List Comprehension
 
@@ -158,4 +161,82 @@ with open("example.json", "r") as jsonfile:
 with open("output.json", "w") as jsonfile:
     data = {"name": "Alice", "age": 30, "city": "New York"}
     json.dump(data, jsonfile)
+    ```
+
+## Decorators
+
+Decorators are a way to modify or enhance a function or method without changing its source code. They are functions that take another function as input and return a new function.
+
+```python
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+def say_hello():
+    print("Hello!")
+
+decorated_say_hello = my_decorator(say_hello)
+decorated_say_hello()
+
+# Using the decorator syntax
+@my_decorator
+def say_goodbye():
+    print("Goodbye!")
+
+say_goodbye()
+```
+## Context Managers
+
+Context managers simplify the management of resources, such as file handling, sockets, or database connections. They are typically used with the with statement to ensure that resources are properly acquired and released.
+
+```python
+class MyContextManager:
+    def __enter__(self):
+        print("Entering the context")
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        print("Exiting the context")
+
+with MyContextManager() as cm:
+    print("Inside the context")
+
+# Using contextlib for simpler context managers
+from contextlib import contextmanager
+
+@contextmanager
+def my_context_manager():
+    print("Entering the context")
+    yield
+    print("Exiting the context")
+
+with my_context_manager():
+    print("Inside the context")
+```
+
+## Multiprocessing
+
+Multiprocessing allows you to run multiple tasks concurrently, taking advantage of multiple CPU cores. The multiprocessing module provides an easy way to parallelize tasks.
+
+```python
+import multiprocessing
+
+def worker(number):
+    print(f"Worker {number} is running")
+
+if __name__ == "__main__":
+    processes = []
+
+    for i in range(5):
+        process = multiprocessing.Process(target=worker, args=(i,))
+        processes.append(process)
+        process.start()
+
+    for process in processes:
+        process.join()
+
+    print("All workers have finished.")
     ```
