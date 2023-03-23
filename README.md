@@ -11,7 +11,7 @@ This tutorial covers the basics of Python programming language. Python is a high
 5. [Functions](#functions)
 6. [Modules and Packages](#modules-and-packages)
 
-## Hello World
+# Hello World
 
 The simplest Python program consists of a single line that prints "Hello, World!" to the screen.
 
@@ -19,7 +19,7 @@ The simplest Python program consists of a single line that prints "Hello, World!
 print("Hello, World!")
 ```
 
-##Variables and Data Types
+#Variables and Data Types
 
 Python has several built-in data types. The most common ones are:
 
@@ -38,7 +38,7 @@ string_var = "Python"
 boolean_var = True
 ```
 
-##Operators
+#Operators
 
 Python provides various operators for performing operations on variables and values. Some common operators are:
 
@@ -46,7 +46,7 @@ Python provides various operators for performing operations on variables and val
     Comparison operators: ==, !=, <, >, <=, >=
     Logical operators: and, or, not
 
-##Control Structures
+#Control Structures
 
 Python uses control structures to control the flow of code execution. The most common control structures are:
 #If, elif, and else
