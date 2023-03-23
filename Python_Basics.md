@@ -41,11 +41,11 @@ boolean_var = True
 ## Operators
 
 Python provides various operators for performing operations on variables and values. Some common operators are:
-
+```python
     Arithmetic operators: +, -, *, /, //, %, **
     Comparison operators: ==, !=, <, >, <=, >=
     Logical operators: and, or, not
-
+```
 ##Control Structures
 
 Python uses control structures to control the flow of code execution. The most common control structures are:
