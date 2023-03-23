@@ -161,7 +161,7 @@ with open("example.json", "r") as jsonfile:
 with open("output.json", "w") as jsonfile:
     data = {"name": "Alice", "age": 30, "city": "New York"}
     json.dump(data, jsonfile)
-    ```
+ ```
 
 ## Decorators
 
